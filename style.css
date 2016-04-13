@@ -114,13 +114,9 @@ body{
 	margin: auto;
     width: 370px;
     height: 370px;
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-    transform: rotate(90deg);
     position: relative;
     top: -20px;
+    left: 25px;
 }
 .les_contact .icone{
 	width: 43px;
@@ -203,19 +199,10 @@ body{
     position: relative;
     right: 12px;
 }
-.ampoule .icone{
-	background-image:url(pictures/ampoule.png);
-	background-position: 93% 7%;
+.ampoule .icone, .calendrier .icone, .sociale .icone{
+	position: relative;
+    bottom: -13px;
 }
-.calendrier .icone{
-	background-image:url(pictures/calendrier.png);
-	background-size: 97%;
-}
-.sociale .icone{
-	background-image:url(pictures/bulle.png);
-	background-size: 113% 113%;
-}
-
 
 /*Skyllbar*/
 .skillbar {
