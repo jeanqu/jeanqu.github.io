@@ -25,8 +25,9 @@ body{
 	font-weight: bold
 }
 .date_titre{
-	font-size: 37px;
-	font-weight: bold
+	font-size: 33px;
+    font-weight: bold;
+    font-style: italic;
 }
 .texte{
 	font-size: 30px;
@@ -163,9 +164,10 @@ body{
 }
 .fleche_et_images{
 	height: 766px;
-    width: 274px;
-    background-size: 85px 759px;
+    width: 240px;
+    background-size: 69px 759px;
     background-image: url(pictures/flecheSimple.png);
+}
 }
 .liste_experiences{
 	
