@@ -114,10 +114,6 @@ body{
 	margin: auto;
     width: 370px;
     height: 370px;
-    border: 3px solid black;
-    background-image: url(pictures/photo.JPG);
-    background-size: 496px;
-    background-position: -98px;
     -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
@@ -164,9 +160,7 @@ body{
 }
 .fleche_et_images{
 	height: 766px;
-    width: 240px;
-    background-size: 69px 759px;
-    background-image: url(pictures/flecheSimple.png);
+    width: 82px;
 }
 }
 .liste_experiences{
