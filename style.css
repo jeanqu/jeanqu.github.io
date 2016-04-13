@@ -1,0 +1,248 @@
+body{
+	margin: auto;
+	width: 1654px;
+	height: 2339px;
+	font-family: 'Verdana', serif;
+	color: #6D6E72;
+}
+
+/*Classes réutilisables */
+
+.titre{
+	font-family: 'Impact', serif;
+	color: #E7B880;
+	font-size: 50px;
+	margin-bottom: 24px;
+}
+.sous_titre{
+	font-size: 37px;
+	font-weight: bold
+}
+.date_titre{
+	font-size: 37px;
+	font-weight: bold
+}
+.texte{
+	font-size: 30px;
+}
+.case{
+	padding: 20px;
+	padding-top: 25px;
+}
+.une_incone{
+	font-family: 'Impact', serif;
+	font-size: 30px;
+	color: #E7B880;
+	width: 30px;
+}
+
+/*Classes particulières*/
+
+.haut_de_page{
+	height: 245px;
+	margin-top: 50px;
+}
+.contenu{
+	margin: auto;
+	max-width: 1400px;
+}
+.presentations{
+	display: flex;
+}
+.bonjour{
+	font-family: 'Impact', serif;
+    display: inline-block;
+    font-size: 88px;
+    margin-right: 50px;
+    margin-top: 10px;
+}
+.presentation_texte{
+	max-width: 1080px;
+	display: inline-block;
+}
+
+.grand_titre .nom_prenom{
+	color: #E7B880;
+}
+.grand_titre{
+	font-family: 'Impact', serif;
+	font-size: 60px;
+	border-top: 3px solid black;
+	border-bottom: 3px solid black;
+	text-align: center;
+	margin-top: 15px;
+}
+.informations{
+	display: flex;
+}
+.colonne_gauche{
+	min-height: 600px;
+	width: 35%;
+	border-right: 3px solid black;
+}
+.colonne_droite{
+	min-height: 600px;
+	width: 64%;
+}
+.photo_contact{
+	border-bottom: 3px solid black;
+}
+.les_contact div{
+	display: flex;
+}
+.les_contact .text{
+	margin-left: 20px;
+	margin-top: 4px;
+}
+.formations{
+	border-bottom: 3px solid black;
+}
+.uneforma{
+	margin-top: 10px;
+}
+.description_conteneur{
+	display: flex;
+}
+.photo_contact .photo{
+	margin: auto;
+    width: 370px;
+    height: 370px;
+    border: 3px solid black;
+    background-image: url(pictures/photo.JPG);
+    background-size: 496px;
+    background-position: -98px;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+    position: relative;
+    top: -20px;
+}
+.les_contact .icone{
+	width: 43px;
+	height: 43px;
+}
+.icone, .text{
+	display: inline-block;
+}
+.telephone .icone{
+	background-image:url(pictures/telephone.png);
+}
+.mail .icone{
+	background-image:url(pictures/mail.png);
+}
+.git .icone{
+	/*background-image:url(pictures/git-logo.png);
+	background-size: 44px 44px;*/
+	font-family: 'Impact', serif;
+	font-size: 35px;
+	color: #A9A69C;
+}
+.international{
+	border-bottom: 3px solid black;
+}
+.conteneur_une_langue{
+	display: flex;
+}
+.conteneur_une_langue .sous_titre{
+	width: 285px;
+}
+
+.Experiences{
+	border-bottom: 3px solid black;
+}
+.conteneur_liste_et_fleche{
+	display: flex;
+}
+.fleche_et_images{
+	height: 766px;
+    width: 274px;
+    background-size: 85px 759px;
+    background-image: url(pictures/flecheSimple.png);
+}
+.liste_experiences{
+	
+}
+.une_experience{
+	margin: 25px;
+}
+.description_experience{
+	margin: 5px;
+}
+.techniques{
+	border-bottom: 3px solid black;
+}
+
+.conteneur_competence{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.ligne{
+	display: flex;
+}
+.liste_competence div{
+	margin-top: 10px;
+}
+.conteneur_un_type_competence{
+	width: 48%;
+	margin: 15px;
+}
+.conteneur_un_type_competence_large{
+	margin: 15px;
+}
+.liste_competence div{
+	display: flex;
+}
+.liste_competence .icone{
+    height: 72px;
+    width: 15%;
+    position: relative;
+    right: 12px;
+}
+.ampoule .icone{
+	background-image:url(pictures/ampoule.png);
+	background-position: 93% 7%;
+}
+.calendrier .icone{
+	background-image:url(pictures/calendrier.png);
+	background-size: 97%;
+}
+.sociale .icone{
+	background-image:url(pictures/bulle.png);
+	background-size: 113% 113%;
+}
+
+
+/*Skyllbar*/
+.skillbar {
+	position:relative;
+	display:block;
+	margin-bottom:15px;
+	width:100%;
+	background:#eee;
+	height:35px;
+	border-radius:3px;
+}
+
+
+.skillbar-bar {
+	height:35px;
+	width:0px;
+	background:#6adcfa;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+}
+
+.skill-bar-percent {
+	position:absolute;
+	right:10px;
+	top:0;
+	font-size:11px;
+	height:35px;
+	line-height:35px;
+	color:#444;
+	color:rgba(0, 0, 0, 0.4);
+}
