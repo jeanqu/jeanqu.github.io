@@ -5,11 +5,17 @@ body{
 	font-family: 'Verdana', serif;
 	color: #6D6E72;
 }
+/*Police */
+@font-face {
+	font-family: 'impactreg';
+	src: url('./impactreg.eot');
+	src: local('impactreg'), url('./impactreg.woff') format('woff'), url('./impactreg.ttf') format('truetype');
+}
 
 /*Classes réutilisables */
 
 .titre{
-	font-family: 'Impact', serif;
+	font-family: 'impactreg';
 	color: #E7B880;
 	font-size: 50px;
 	margin-bottom: 24px;
@@ -50,7 +56,7 @@ body{
 	display: flex;
 }
 .bonjour{
-	font-family: 'Impact', serif;
+	font-family: 'impactreg';
     display: inline-block;
     font-size: 88px;
     margin-right: 50px;
@@ -65,7 +71,7 @@ body{
 	color: #E7B880;
 }
 .grand_titre{
-	font-family: 'Impact', serif;
+	font-family: 'impactreg';
 	font-size: 60px;
 	border-top: 3px solid black;
 	border-bottom: 3px solid black;
