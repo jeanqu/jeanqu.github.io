@@ -56,6 +56,13 @@ body{
     flex-direction: column;
     justify-content: flex-end;
 }
+.titre_header{
+	font-size: 4.5em;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: center;
+}
 .profile_picture{
 	width: 260px;
     height: 260px;
@@ -189,7 +196,7 @@ body{
 .mail .icone{
 	background-image:url(pictures/mail.png);
 }
-.git .icone{
+.git .icone, .CV .icone{
 	/*background-image:url(pictures/git-logo.png);
 	background-size: 44px 44px;*/
 	font-family: 'impactreg';
