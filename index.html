@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Impact">
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Arnoldboecklin">
     <link rel="stylesheet" href="police/font.css">
     <link rel="stylesheet" href="style.css">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-resource.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-animate.js"></script>
+    <script src="app.js"></script>
     <!-- 1. Load libraries -->
     <!-- IE required polyfill -->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/es6-shim/0.35.0/es6-shim.min.js"></script>
@@ -24,8 +26,24 @@
   </head>
 
   <!-- 3. Display the application -->
-  <body>
-    <div class="contenu">
+  <body ng-app="myApp">
+    <div class="contenu" ng-controller="MainCtrl">
+      <div class="conteneur_choix_langues">
+        <div class="un_choix_langue" ng-repeat="langage in listLangages" ng-value={{langage}} ng-model="chosenLanguage" ng-click="changeLangage(langage)">
+          <p>{{langage}}</p>
+      </div>
+      <div ng-show="bool" class="fade">
+        Show and hide me
+      </div>
+      <button ng-click="bool=!bool">Toggle</button>
+
+      <style>
+      .fade.ng-hide {
+        transition:3s linear all;
+        opacity:0;
+      }
+      </style>
+      </div>
       <div class="haut_de_page">
         <!--<div class="presentations">
           <div class="bonjour">
@@ -37,18 +55,18 @@
         </div> -->
         <div class="grand_titre">
           <div class="ligne1"> 
-            <span class="nom_prenom"> JEAN QUEVAL</span> <br> Data scientist cherche un stage de fin d'étude <br> de semptembre 2016 à février 2017
+            <span class="nom_prenom">{{TEXT.NOM_PRENOM}}</span> <br> {{TEXT.TITRE_LIGNE_2}}<br> {{TEXT.TITRE_LIGNE_3}}
           </div> 
         </div>
       </div>
       <div class="informations">
         <div class="colonne_gauche">
           <div class="photo_contact case">
-            <img src="pictures/photo.JPG" class="photo"/> 
+            <img src="pictures/photo.JPG" class="photo" ng-animate="'animate'" ng-if="showPhoto"/> 
             <div class="conteneur_contact">
               <div class="contact texte">
                 <div class="titre">
-                  Contact
+                  {{TEXT.TITRE_CONTACT}}
                 </div>
                 <div class="les_contact">
                   <div class="telephone"> 
@@ -56,7 +74,7 @@
                       
                     </div>
                     <div class="text">
-                      06 70 42 26 71
+                      {{TEXT.NUMERO_TEL}}
                     </div>
                   </div>
                   <div class="mail">
@@ -64,7 +82,7 @@
                       
                     </div>
                     <div class="text">
-                      jean.queval1@gmail.com
+                      {{TEXT.ADRESSE_MAIL}}
                     </div>
                   </div>
                   <div class="git">
@@ -72,7 +90,7 @@
                       GIT
                     </div>
                     <div class="text">
-                      https://github.com/jeanqu
+                      {{TEXT.ADRESSE_GIT}}
                     </div>
                   </div>
                 </div>
@@ -81,11 +99,11 @@
           </div>
           <div class="formations case">
             <div class="titre_formation titre">
-              Etudes
+              {{TEXT.TITRE_ETUDE}}
             </div>
             <div class="uneforma">
               <div class="sous_titre">
-                UTC ingénieur informatique 
+                {{TEXT.TITRE_ETUDE_INFORMATIQUE}}
               </div>
               <div class="date_titre">
                 2013 - 2016
@@ -95,7 +113,7 @@
                   +
                 </div>
                 <div class="texte">
-                  Diplome en fin d'année
+                  {{TEXT.INFORMATQIQUE_1}}
                 </div>
               </div>
               <div class="description_conteneur">
@@ -103,7 +121,7 @@
                   +
                 </div>
                 <div class="texte">
-                  Filière "fouille de données"
+                  {{TEXT.INFORMATQIQUE_2}}
                 </div>
               </div>
               <div class="description_conteneur">
@@ -111,7 +129,7 @@
                   +
                 </div>
                 <div class="texte">
-                  Option éthique et philosophie
+                  {{TEXT.INFORMATQIQUE_3}}
                 </div>
               </div>
               <div class="description_conteneur">
@@ -119,13 +137,13 @@
                   +
                 </div>
                 <div class="texte">
-                  Un semestre d'étude à Iquique, Chili
+                  {{TEXT.INFORMATQIQUE_4}}
                 </div>
               </div>
             </div>
             <div class="uneforma">
               <div class="sous_titre">
-                UTC classes préparatoires intégrées 
+                {{TEXT.TITRE_PREPA}}
               </div>
               <div class="date_titre">
                 2011 - 2016
@@ -135,7 +153,7 @@
                   +
                 </div>
                 <div class="texte">
-                  Mathématiques, physiques et informatiques 
+                  {{TEXT.PREPA_1}}
                 </div>
               </div>
               <div class="description_conteneur">
@@ -143,13 +161,13 @@
                   +
                 </div>
                 <div class="texte">
-                  Un semestre d'étude à Tarragone, Espagne
+                  {{TEXT.PREPA_2}}
                 </div>
               </div>
             </div>
             <div class="uneforma">
               <div class="sous_titre">
-                Baccalauréat scientifique
+                {{TEXT.TITRE_BAC}}
               </div>
               <div class="date_titre">
                 2011
@@ -159,19 +177,19 @@
                   +
                 </div>
                 <div class="texte">
-                  Mention bien, 20/20 en maths
+                  {{TEXT.TEXTE_BAC}}
                 </div>
               </div>
             </div>
           </div>
           <div class="international case">
             <div class="titre">
-              Langues
+              {{TEXT.TITRE_INTERNATIONNAL}}
             </div>
             <div class="conteneur_langues">
               <div class="conteneur_une_langue ">
                 <div class="sous_titre">
-                  Anglais
+                  {{TEXT.ENGLISH}}
                 </div>
                 <div class="skillbar clearfix " data-percent="65%">
                     <div class="skillbar-bar" style="background: #88cd2a; width: 90%"></div>
@@ -180,7 +198,7 @@
 
               <div class="conteneur_une_langue ">
                 <div class="sous_titre">
-                  Espagnol
+                  {{TEXT.SPANISH}}
                 </div>
                 <div class="skillbar clearfix " data-percent="65%">
                     <div class="skillbar-bar" style="background: #F7A53B; width: 90%"></div>
@@ -189,7 +207,7 @@
 
               <div class="conteneur_une_langue ">
                 <div class="sous_titre">
-                  Polonais
+                  {{TEXT.POLISH}}
                 </div>
                 <div class="skillbar clearfix " data-percent="65%">
                     <div class="skillbar-bar" style="background: #6ADCFA; width: 65%"></div>
@@ -201,12 +219,14 @@
           <div class="Interet case">
             <div class="conteneur_un_type_competence_large">
               <div class="titre">
-                Autres acivités
+                {{TEXT.TITRE_OTHERS}}
               </div>
               <div class="liste_interets texte">
-                -Responsable week-end de l'association Esperanto Compiègne (accueil des étudiants étrangers) <br> <br>
-                -Badminton, tennis, escalade <br>
-                -Sortir, voyager, rencontrer du monde
+                {{TEXT.TEXTE_OTHERS_1}}
+                <br><br>
+                {{TEXT.TEXTE_OTHERS_2}}
+                <br>
+                {{TEXT.TEXTE_OTHERS_3}}
               </div>
             </div>
           </div>
@@ -214,44 +234,46 @@
         <div class="colonne_droite"> 
           <div class="Experiences case">
             <div class="titre">
-              Expériences et projets
+              {{TEXT.TITRE_EXPERIENCES}}
             </div>
             <div class="conteneur_liste_et_fleche">
               <img src="pictures/flecheSimple.png" class="fleche_et_images"/>
               <div class="liste_experiences">
                 <div class="une_experience">
                   <div class="sous_titre">
-                    Projet personnel: développement d'une application web mobile
+                    {{TEXT.ST_EXPERIENCE_1}}
                   </div>
                   <div class="date_titre">
-                    Actuellement
+                    {{TEXT.DATE_EXPERIENCE_1}}
                   </div>
                   <div class="description_experience texte">
-                    - Développement d'une application qui a pour but de permettre aux propriétaires des voitures garées dans un parking de communiquer entre eux en utilisant leurs numéros de plaques d'immatriculations.
+                    {{TEXT.TEXTE_EXPERIENCE_1}}
                   </div>
                 </div>
                 <div class="une_experience">
                   <div class="sous_titre">
-                    DreamCentury - Stage de développement web
+                    {{TEXT.ST_EXPERIENCE_2}}
                   </div>
                   <div class="date_titre">
-                    Septembre 2014 - Février 2015
+                    {{TEXT.DATE_EXPERIENCE_2}}
                   </div>
                   <div class="description_experience texte">
-                    - Développeur full-stack <br>
-                    - Réalisation de nombreux projets en communication directe avec les graphistes et commerciaux. <br>
-                    - Développement de l'ensemble d'un jeu-vidéo en ligne. <br>
+                    {{TEXT.TEXTE_EXPERIENCE_2_1}}
+                    <br>
+                    {{TEXT.TEXTE_EXPERIENCE_2_2}}
+                    <br>
+                    {{TEXT.TEXTE_EXPERIENCE_2_3}}
                   </div>
                 </div>
                 <div class="une_experience">
                   <div class="sous_titre">
-                    OPCALIM - Travail d’été, bureautique
+                    {{TEXT.ST_EXPERIENCE_3}}
                   </div>
                   <div class="date_titre">
-                    Aout 2013
+                    {{TEXT.DATE_EXPERIENCE_3}}
                   </div>
                   <div class="description_experience texte">
-                    - Organisation et recherche de données, développement de maccros VBA.
+                    {{TEXT.TEXTE_EXPERIENCE_3}}
                   </div>
                 </div>
               </div>
@@ -259,52 +281,52 @@
           </div>
           <div class="techniques case">
             <div class="titre">
-              Compétences
+              {{TEXT.TITRE_COMPETENCE_1}}
             </div>
             <div class="conteneur_competence">
               <div class="ligne">
                 <div class="conteneur_un_type_competence">
                   <div class="titre_competence sous_titre">
-                    Front-end
+                    {{TEXT.ST_COMPETENCE_1}}
                   </div>
                   <div class="liste_competence texte">
-                    AngularJS, HTML, CSS / SASS, jQuery
+                    {{TEXT.TEXTE_COMPETENCE_1}}
                   </div>
                 </div>
                 <div class="conteneur_un_type_competence">
                   <div class="titre_competence sous_titre">
-                    Back-end et Databases
+                    {{TEXT.ST_COMPETENCE_2}}
                   </div>
                   <div class="liste_competence texte">
-                    Node.js, PHP, ASP, PostgreSQL, MySQL 
+                    {{TEXT.TEXTE_COMPETENCE_2}}
                   </div>
                 </div>
               </div>
               <div class="ligne">
                 <div class="conteneur_un_type_competence">
                   <div class="titre_competence sous_titre">
-                    Programmation
+                    {{TEXT.ST_COMPETENCE_3}}
                   </div>
                   <div class="liste_competence texte">
-                    Javascript, Java, C, C++, Python, 
+                    {{TEXT.TEXTE_COMPETENCE_3}} 
                   </div>
                 </div>
                 <div class="conteneur_un_type_competence">
                   <div class="titre_competence sous_titre">
-                    Outils mathématiques
+                    {{TEXT.ST_COMPETENCE_4}}
                   </div>
                   <div class="liste_competence texte">
-                    R, Python (SageMath), Matlab, Scilab
+                    {{TEXT.TEXTE_COMPETENCE_4}}
                   </div>
                 </div>
               </div>
               <div class="ligne">
                 <div class="conteneur_un_type_competence_large">
                   <div class="titre_competence sous_titre">
-                    Techniques
+                    {{TEXT.TITRE_TECHNIQUES}}
                   </div>
                   <div class="liste_competence texte">
-                    Object oriented programming — Version control (git) — MVC architecture — Analysis and design of information systems (UML) — Use of design patterns — Use of Ajax architecture — Notions of system and network architecture
+                    {{TEXT.TEXTE_TECHNIQUES}}
                   </div>
                 </div>
               </div>
@@ -315,25 +337,25 @@
           <div class="General case">
             <div class="conteneur_un_type_competence_large">
               <div class="titre">
-                Général
+                {{TEXT.TITRE_GENERAL}}
               </div>
               <div class="liste_competence">
                 <div class="ampoule"> 
                   <img src="pictures/ampoule.png" class="icone"/>   
                   <div class="texte">
-                    Innovant, esprit d'analyse, bonne capacité d'apprentissage, aime la résolution de problème et les challenges.
+                    {{TEXT.TEXTE_GENERAL_1}}
                   </div>
                 </div>
                 <div class="calendrier">
                   <img src="pictures/calendrier.png" class="icone"/>    
                   <div class="texte">
-                    Indépendant, capable d'estimer les délais et de les respecter, objectif et responsable.
+                    {{TEXT.TEXTE_GENERAL_2}}
                   </div>
                 </div>
                 <div class="sociale">
                   <img src="pictures/bulle.png" class="icone"/>    
                   <div class="texte">
-                    Bonne capacité de compréhensions, d'intégrations et de travail en groupe, positif.
+                    {{TEXT.TEXTE_GENERAL_3}}
                   </div>
                 </div>
               </div>

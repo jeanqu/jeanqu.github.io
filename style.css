@@ -134,7 +134,7 @@ body{
 .git .icone{
 	/*background-image:url(pictures/git-logo.png);
 	background-size: 44px 44px;*/
-	font-family: 'Impact', serif;
+	font-family: 'impactreg';
 	font-size: 35px;
 	color: #A9A69C;
 }
@@ -234,4 +234,31 @@ body{
 	line-height:35px;
 	color:#444;
 	color:rgba(0, 0, 0, 0.4);
+}
+
+/* Animate */
+.animate-enter, 
+.animate-leave
+{ 
+    -webkit-transition: 1400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    -moz-transition: 1400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    -ms-transition: 1400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    -o-transition: 1400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    transition: 1400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    position: relative;
+    display: block;
+} 
+
+.animate-enter.animate-enter-active, 
+.animate-leave {
+    opacity: 1;
+    top: 0;
+    height: 30px;
+}
+
+.animate-leave.animate-leave-active,
+.animate-enter {
+    opacity: 0;
+    top: -50px;
+    height: 0px;
 }
