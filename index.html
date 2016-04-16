@@ -26,24 +26,22 @@
   </head>
 
   <!-- 3. Display the application -->
-  <body ng-app="myApp">
-    <div class="contenu" ng-controller="MainCtrl">
-      <div class="conteneur_choix_langues">
-        <div class="un_choix_langue" ng-repeat="langage in listLangages" ng-value={{langage}} ng-model="chosenLanguage" ng-click="changeLangage(langage)">
-          <p>{{langage}}</p>
+  <body ng-app="myApp" ng-controller="MainCtrl">
+    <header class="header_main">
+      <div class="profile_picture">
+        
       </div>
-      <div ng-show="bool" class="fade">
-        Show and hide me
+      <div class="container_langues">
+        <div class="conteneur_choix_langues">
+          <ul>
+            <li class="un_choix_langue sous_titre" ng-repeat="langage in listLangages" ng-model="chosenLanguage" ng-click="changeLangage(langage)" ng-class="{active : isSelected(langage)}">
+              <p>{{langage}}</p>
+            </li>
+          </ul>
+        </div>
       </div>
-      <button ng-click="bool=!bool">Toggle</button>
-
-      <style>
-      .fade.ng-hide {
-        transition:3s linear all;
-        opacity:0;
-      }
-      </style>
-      </div>
+    </header>
+    <div class="contenu" >
       <div class="haut_de_page">
         <!--<div class="presentations">
           <div class="bonjour">
@@ -62,7 +60,7 @@
       <div class="informations">
         <div class="colonne_gauche">
           <div class="photo_contact case">
-            <img src="pictures/photo.JPG" class="photo" ng-animate="'animate'" ng-if="showPhoto"/> 
+            <img src="pictures/photo.JPG" class="photo" ng-animate="'animate'" ng-class="{hide_photo : hidePhoto}"/> 
             <div class="conteneur_contact">
               <div class="contact texte">
                 <div class="titre">

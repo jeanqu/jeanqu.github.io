@@ -28,7 +28,7 @@
     "TITRE_EXPERIENCES" : "Expériences et projets",
     "ST_EXPERIENCE_1" : "Projet personnel: développement d'une application web mobile",
     "DATE_EXPERIENCE_1" : "Actuellement",
-    "TEXTE_EXPERIENCE_1" : "- Développement d'une application qui a pour but de permettre aux propriétaires des voitures garées dans un parking de communiquer entre eux en utilisant leurs numéros de plaques d'immatriculations.",
+    "TEXTE_EXPERIENCE_1" : "- Développement d'une application qui a pour but de permettre aux propriétaires des voitures garées dans un parking de communiquer entre eux en utilisant leurs numéros de plaques d'immatriculations",
     "ST_EXPERIENCE_2" : "DreamCentury - Stage de développement web",
     "DATE_EXPERIENCE_2 : " : "Septembre 2014 - Février 2015",
     "TEXTE_EXPERIENCE_2_1" : "- Développeur full-stack",
@@ -36,7 +36,7 @@
     "TEXTE_EXPERIENCE_2_3" : "- Développement de l'ensemble d'un jeu-vidéo en ligne",
     "ST_EXPERIENCE_3" : "OPCALIM - Travail d’été, bureautique",
     "DATE_EXPERIENCE_3" : "Août 2013",
-    "TEXTE_EXPERIENCE_3" : "- Organisation et recherche de données, développement de maccros VBA.",
+    "TEXTE_EXPERIENCE_3" : "- Organisation et recherche de données, développement de maccros VBA",
     "TITRE_COMPETENCE_1" : "Compétences",
     "ST_COMPETENCE_1" : "Front-end",
     "TEXTE_COMPETENCE_1" : "AngularJS, HTML, CSS / SASS, jQuery",
@@ -49,7 +49,7 @@
     "TITRE_TECHNIQUES" : "Techniques",
     "TEXTE_TECHNIQUES" : "Object oriented programming — Version control (git) — MVC architecture — Analysis and design of information systems (UML) — Use of design patterns — Use of Ajax architecture — Notions of system and network architecture",
     "TITRE_GENERAL" : "Général",
-    "TEXTE_GENERAL_1" : "Innovant, esprit d'analyse, bonne capacité d'apprentissage, aime la résolution de problème et les challenges.",
-    "TEXTE_GENERAL_2" : "Indépendant, capable d'estimer les délais et de les respecter, objectif et responsable.",
-    "TEXTE_GENERAL_3" : "Bonne capacité de compréhensions, d'intégrations et de travail en groupe, ouvert."
+    "TEXTE_GENERAL_1" : "Innovant, esprit d'analyse, bonne capacité d'apprentissage, aime la résolution de problème et les challenges",
+    "TEXTE_GENERAL_2" : "Indépendant, capable d'estimer les délais et de les respecter, objectif et responsable",
+    "TEXTE_GENERAL_3" : "Bonne capacité de compréhensions, d'intégrations et de travail en groupe, ouvert"
 }

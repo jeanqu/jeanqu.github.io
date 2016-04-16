@@ -1,7 +1,7 @@
 body{
 	margin: auto;
-	width: 1654px;
-	height: 2339px;
+	/*width: 1654px;
+	height: 2339px;*/
 	font-family: 'Verdana', sans-serif;
 	color: #6D6E72;
 }
@@ -43,9 +43,63 @@ body{
 	width: 30px;
 }
 
-/*Classes particulières*/
+/*Classes particulières */
+.header_main{
+	box-sizing: content-box;
+    background-image: url(/pictures/banderoleMarron.jpg);
+    background-size: cover;
+    color: #fff;
+    /* padding: 80px 0 20px; */
+    margin-bottom: 40px;
+    height: 495px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.profile_picture{
+	width: 260px;
+    height: 260px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 150px;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+    background: url(/pictures/photo.JPG);
+    background-size: cover;
+}
+.container_langues{
+	width: 100%;
+	height: 140px;
+	background-color: black;
+	opacity: 0.3;
+}
+.conteneur_choix_langues{
+	margin: auto;
+	width: 30%;
+	margin-top: -15px;
+}
+.conteneur_choix_langues ul{
+	padding: 0;
+    overflow: hidden;
+    list-style-type: none;
+}
+.un_choix_langue{
+	display: inline-block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+	width: 44%;
+	cursor: pointer;
+	color: white;
+}
+.un_choix_langue:hover {
+	opacity: 0.8
+}
+.un_choix_langue.active{
+	border-bottom: 5px solid black;
+}
 
-.haut_de_page{
+.haut_de_page{	
 	height: 245px;
 	margin-top: 50px;
 }
@@ -117,6 +171,10 @@ body{
     position: relative;
     top: -20px;
     left: 25px;
+    transition: 0.5s ease all;
+}
+.photo_contact .photo.hide_photo{
+	height: 0px;
 }
 .les_contact .icone{
 	width: 43px;

@@ -28,7 +28,7 @@
     "TITRE_EXPERIENCES" : "Professional experience and projects",
     "ST_EXPERIENCE_1" : "Personal project: a mobile web application development",
     "DATE_EXPERIENCE_1" : "Currently",
-    "TEXTE_EXPERIENCE_1" : "- Developing an application that enable owners of cars parked in a car to communicate with each other using their numbers of registrations plates.",
+    "TEXTE_EXPERIENCE_1" : "- Developing an application that enable owners of cars parked in a car to communicate with each other using their numbers of registrations plates",
     "ST_EXPERIENCE_2" : "DreamCentury - Web development internship",
     "DATE_EXPERIENCE_2 : " : "September 2014 - February 2015",
     "TEXTE_EXPERIENCE_2_1" : "- Full-stack developer",
@@ -36,7 +36,7 @@
     "TEXTE_EXPERIENCE_2_3" : "- Development of an entire video game onlinee",
     "ST_EXPERIENCE_3" : "OPCALIM - Summer job - Office automation",
     "DATE_EXPERIENCE_3" : "August 2013",
-    "TEXTE_EXPERIENCE_3" : "- Organization and data search, VBA macros development.",
+    "TEXTE_EXPERIENCE_3" : "- Organization and data search, VBA macros development",
     "TITRE_COMPETENCE_1" : "Skills",
     "ST_COMPETENCE_1" : "Front-end",
     "TEXTE_COMPETENCE_1" : "AngularJS, HTML, CSS / SASS, jQuery",
@@ -49,7 +49,7 @@
     "TITRE_TECHNIQUES" : "Techniques",
     "TEXTE_TECHNIQUES" : "Object oriented programming — Version control (git) — MVC architecture — Analysis and design of information systems (UML) — Use of design patterns — Use of Ajax architecture — Notions of system and network architecture",
     "TITRE_GENERAL" : "General",
-    "TEXTE_GENERAL_1" : "Innovative, analytical, good learning ability, like solving problems and challenges.",
-    "TEXTE_GENERAL_2" : "Independent, able to estimate the deadlines and respect, objective and responsible.",
-    "TEXTE_GENERAL_3" : "Good ability of understanding, integrations and group work, open-minded."
+    "TEXTE_GENERAL_1" : "Innovative, analytical, good learning ability, like solving problems and challenges",
+    "TEXTE_GENERAL_2" : "Independent, able to estimate the deadlines and respect, objective and responsible",
+    "TEXTE_GENERAL_3" : "Good ability of understanding, integrations and group work, open-minded"
 }
