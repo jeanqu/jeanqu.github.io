@@ -45,16 +45,13 @@ body{
 
 /*Classes particulières */
 .header_main{
-	box-sizing: content-box;
+	    box-sizing: content-box;
     background-image: url(/pictures/banderoleMarron.jpg);
     background-size: cover;
     color: #fff;
-    /* padding: 80px 0 20px; */
     margin-bottom: 40px;
     height: 495px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    display: block;
 }
 .titre_header{
 	font-size: 4.5em;
@@ -95,12 +92,12 @@ body{
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-	width: 44%;
+	width: 27%;
 	cursor: pointer;
 	color: white;
 }
 .un_choix_langue:hover {
-	opacity: 0.8
+	opacity: 0.2;
 }
 .un_choix_langue.active{
 	border-bottom: 5px solid black;
@@ -253,7 +250,7 @@ body{
 	margin: 15px;
 }
 .conteneur_un_type_competence_large{
-	margin: 15px;
+
 }
 .liste_competence div{
 	display: flex;
@@ -326,4 +323,37 @@ body{
     opacity: 0;
     top: -50px;
     height: 0px;
+}
+
+.petit_ecran{
+	display: none;
+}
+
+@media screen and (max-width: 1280px)
+{
+ 	.grand_ecran{
+		display: none;
+	}
+	.titre_header{
+		font-size: 3.5em;
+	}
+	.conteneur_choix_langues{
+		width: 100%
+	}
+	.un_choix_langue{
+		width: 33%;
+		font-size: 30px;
+		padding: 0px;
+	}
+
+	.petit_ecran{
+	    max-width: 100%;
+	    margin-bottom: 80px;
+	    display: block;
+	    margin-left: auto;
+	    margin-right: auto;
+	}
+	.petit_ecran img{
+		width: 100%;
+	}
 }
