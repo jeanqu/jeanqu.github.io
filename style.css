@@ -84,17 +84,19 @@ body{
 }
 .conteneur_choix_langues ul{
 	padding: 0;
-    overflow: hidden;
     list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+
 }
 .un_choix_langue{
 	display: inline-block;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-	width: 27%;
-	cursor: pointer;
-	color: white;
+    width: 36%;
+    cursor: pointer;
+    color: white;
 }
 .un_choix_langue:hover {
 	opacity: 0.2;
@@ -341,8 +343,8 @@ body{
 		width: 100%
 	}
 	.un_choix_langue{
-		width: 33%;
-		font-size: 30px;
+		width: 50%;
+		font-size: 36px;
 		padding: 0px;
 	}
 
