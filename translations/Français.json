@@ -48,7 +48,7 @@
     "ST_COMPETENCE_4" : "Outils mathématiques",
     "TEXTE_COMPETENCE_4" : "R, Python (SageMath), Matlab, Scilab",
     "TITRE_TECHNIQUES" : "Techniques",
-    "TEXTE_TECHNIQUES" : "Object oriented programming — Version control (git) — MVC architecture — Analysis and design of information systems (UML) — Use of design patterns — Use of Ajax architecture — Notions of system and network architecture",
+    "TEXTE_TECHNIQUES" : "Programmation orientée objet — Version control (git) — architecture MVC — Analyse et design des schémas de modélisation (UML) — Utilisation de design patterns — Architecture Ajax — Notions d'architecture système et réseaux",
     "TITRE_GENERAL" : "Général",
     "TEXTE_GENERAL_1" : "Innovant, esprit d'analyse, bonne capacité d'apprentissage, aime la résolution de problème et les challenges",
     "TEXTE_GENERAL_2" : "Indépendant, capable d'estimer les délais et de les respecter, objectif et responsable",
