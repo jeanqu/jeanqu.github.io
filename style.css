@@ -35,6 +35,7 @@ body{
 .case{
 	padding: 20px;
 	padding-top: 25px;
+	overflow: hidden;
 }
 .une_incone{
 	font-family: 'Impact', serif;
@@ -262,6 +263,9 @@ body{
     width: 15%;
     position: relative;
     right: 12px;
+}
+.liste_competence .texte{
+	width: 85%
 }
 .ampoule .icone, .calendrier .icone, .sociale .icone{
 	position: relative;

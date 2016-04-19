@@ -1,5 +1,5 @@
 {
-    "GRAND_TITRE" : "Qui suis-je?",
+    "GRAND_TITRE" : "Aguicher c'est ma passion",
     "ONGLET_FRANCAIS" : "Français",
     "ONGLET_ANGLAIS" : "Anglais",
 	"NOM_PRENOM": "JEAN QUEVAL",
@@ -53,7 +53,7 @@
     "TITRE_TECHNIQUES" : "Techniques",
     "TEXTE_TECHNIQUES" : "Programmation orientée objet — Version control (git) — architecture MVC — Analyse et design des schémas de modélisation (UML) — Utilisation de design patterns — Architecture Ajax — Notions d'architecture système et réseaux",
     "TITRE_GENERAL" : "Général",
-    "TEXTE_GENERAL_1" : "Innovant, esprit d'analyse, bonne capacité d'apprentissage, aime la résolution de problème et les challenges",
+    "TEXTE_GENERAL_1" : "Innovant, esprit d'analyse, bonne capacité d'apprentissage, aime la résolution de problèmes et les challenges",
     "TEXTE_GENERAL_2" : "Indépendant, capable d'estimer les délais et de les respecter, objectif et responsable",
-    "TEXTE_GENERAL_3" : "Bonnes capacités de compréhensions, d'intégrations et de travail en groupe, ouvert"
+    "TEXTE_GENERAL_3" : "Bonnes capacités de compréhension, d'intégration et de travail en groupe, ouvert"
 }
