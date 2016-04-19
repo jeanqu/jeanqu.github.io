@@ -45,7 +45,7 @@ body{
 
 /*Classes particulières */
 .header_main{
-	    box-sizing: content-box;
+    box-sizing: content-box;
     background-image: url(/pictures/banderoleMarron.jpg);
     background-size: cover;
     color: #fff;

@@ -29,7 +29,7 @@
   <body ng-app="myApp" ng-controller="MainCtrl">
     <header class="header_main">
       <h1 class="titre_header">
-        Who am I?
+        {{TEXT.GRAND_TITRE}}
       </h1>
       <div class="profile_picture">
         
@@ -37,8 +37,15 @@
       <div class="container_langues">
         <div class="conteneur_choix_langues">
           <ul>
-            <li class="un_choix_langue sous_titre" ng-repeat="langage in listLangages" ng-model="chosenLanguage" ng-click="changeLangage(langage)" ng-class="{active : isSelected(langage)}">
+            <!--<li class="un_choix_langue sous_titre" ng-repeat="langage in listLangages" ng-model="chosenLanguage" ng-click="changeLangage(langage)" ng-class="{active : isSelected(langage)}">
               <p>{{langage}}</p>
+            </li> -->
+
+            <li class="un_choix_langue sous_titre" ng-model="chosenLanguage" ng-click="changeLangage('fr')" ng-class="{active : isSelected('fr')}">
+              <p>{{TEXT.ONGLET_FRANCAIS}}</p>
+            </li>
+            <li class="un_choix_langue sous_titre" ng-model="chosenLanguage" ng-click="changeLangage('en')" ng-class="{active : isSelected('en')}">
+              <p>{{TEXT.ONGLET_ANGLAIS}}</p>
             </li>
           </ul>
         </div>
@@ -355,9 +362,7 @@
                     {{TEXT.TEXTE_GENERAL_1}}
                   </div>
                 </div>
-                <div class="calendrier">
-                  <img src="pictures/calendrier.png" class="icone"/>    
-                  <div class="texte">
+                   <div class="texte">
                     {{TEXT.TEXTE_GENERAL_2}}
                   </div>
                 </div>
@@ -374,8 +379,8 @@
       </div>
     </div>
     <div class="contenu petit_ecran">
-      <a href="pictures/EnglishCV.pdf" target="blank">
-        <img src="pictures/{{selected}}CV.pdf" alt="my resum" href>
+      <a href={{lienPDF}} target="blank">
+        <img src={{lienPDF}} alt="my resum"> 
       </a>
     </div>
   </body>
