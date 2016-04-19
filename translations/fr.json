@@ -1,5 +1,5 @@
 {
-    "GRAND_TITRE" : "Aguicher c'est ma passion",
+    "GRAND_TITRE" : "Qui suis-je?",
     "ONGLET_FRANCAIS" : "Français",
     "ONGLET_ANGLAIS" : "Anglais",
 	"NOM_PRENOM": "JEAN QUEVAL",
@@ -32,7 +32,7 @@
     "TITRE_EXPERIENCES" : "Expériences et projets",
     "ST_EXPERIENCE_1" : "Projet personnel: développement d'une application web mobile",
     "DATE_EXPERIENCE_1" : "Actuellement",
-    "TEXTE_EXPERIENCE_1" : "- Développement d'une application qui a pour but de permettre aux propriétaires des voitures garées dans un parking de communiquer entre eux en utilisant leurs numéros de plaques d'immatriculations.",
+    "TEXTE_EXPERIENCE_1" : "- Développement d'une application qui a pour but de permettre aux propriétaires des voitures de communiquer entre eux en utilisant leurs numéros de plaques d'immatriculations.",
     "ST_EXPERIENCE_2" : "DreamCentury - Stage de développement web",
     "DATE_EXPERIENCE_2 : " : "Septembre 2014 - Février 2015",
     "TEXTE_EXPERIENCE_2_1" : "- Développeur full-stack",

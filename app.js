@@ -4,10 +4,6 @@ var myApp = angular.module('myApp', ['ngResource']);
 
 
 myApp.controller('MainCtrl', ['$rootScope', '$scope', 'translation', function ($rootScope, $scope, translation) {
-  translation.getTranslation($rootScope, 'fr');
-  $scope.selected = 'fr';
-
-  $scope.hidePhoto = true;
 
   $scope.changeLangage = function(langage) {
     if(langage == 'en')
@@ -25,7 +21,7 @@ myApp.controller('MainCtrl', ['$rootScope', '$scope', 'translation', function ($
   $scope.isSelected = function(langage){
     return $scope.selected === langage;
   }
-
+  $scope.changeLangage('en');
   $scope.listLangages = ['fr', 'en'];
 }])
 .service('translation', ["$resource", function($resource) {
@@ -33,7 +29,7 @@ myApp.controller('MainCtrl', ['$rootScope', '$scope', 'translation', function ($
     var languageFilePath = 'translations/' + language + '.json';
       $resource(languageFilePath).get(function (data) {
       $rootScope.TEXT = data;
-      $rootScope.lienPDF = '/pictures/' + language + 'CV.pdf'
+      $rootScope.lienPDF = '/pictures/' + language + 'CV'
     });
   };
 }])
