@@ -21,7 +21,7 @@ myApp.controller('MainCtrl', ['$rootScope', '$scope', 'translation', function ($
   $scope.isSelected = function(langage){
     return $scope.selected === langage;
   }
-  $scope.changeLangage('fr');
+  $scope.changeLangage('en');
   $scope.listLangages = ['fr', 'en'];
 }])
 .service('translation', ["$resource", function($resource) {
