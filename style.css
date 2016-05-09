@@ -13,35 +13,37 @@ body{
 }
 
 /*Classes réutilisables */
-
+.grand_ecran[size="A4"] {  
+  width: 21cm;
+  height: 29.7cm; 
+}
 .titre{
 	font-family: 'impactreg';
 	color: #E7B880;
-	font-size: 50px;
-	margin-bottom: 24px;
+	font-size: 25px;
 }
 .sous_titre{
-	font-size: 37px;
+	font-size: 20px;
 	font-weight: bold
 }
 .date_titre{
-	font-size: 33px;
+	font-size: 18px;
     font-weight: bold;
     font-style: italic;
 }
 .texte{
-	font-size: 30px;
+	font-size: 15px;
 }
 .case{
-	padding: 20px;
-	padding-top: 25px;
+	padding: 10px;
+	padding-top: 14px;
 	overflow: hidden;
 }
 .une_incone{
 	font-family: 'Impact', serif;
-	font-size: 30px;
+	font-size: 16px;
 	color: #E7B880;
-	width: 30px;
+	width: 16px;
 }
 
 /*Classes particulières */
@@ -50,38 +52,39 @@ body{
     background-image: url(/pictures/banderoleMarron.jpg);
     background-size: cover;
     color: #fff;
-    margin-bottom: 40px;
-    height: 495px;
+    margin-bottom: 20px;
+    height: 290px;
     display: block;
+    overflow: hidden;
 }
 .titre_header{
-	font-size: 4.5em;
+	font-size: 2.5em;
     font-weight: 500;
     margin-top: 0;
-    margin-bottom: 10px;
+    margin-bottom: 6px;
     text-align: center;
 }
 .profile_picture{
-	width: 260px;
-    height: 260px;
+	width: 140px;
+    height: 140px;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 150px;
-    -webkit-border-radius: 150px;
-    -moz-border-radius: 150px;
+    border-radius: 80px;
+    -webkit-border-radius: 80px;
+    -moz-border-radius: 80px;
     background: url(/pictures/photo.JPG);
     background-size: cover;
 }
 .container_langues{
 	width: 100%;
-	height: 140px;
-	background-color: black;
+	background-color: black; 
 	opacity: 0.3;
+	height: 90px;
 }
 .conteneur_choix_langues{
 	margin: auto;
 	width: 30%;
-	margin-top: -15px;
+	margin-top: -8px;
 }
 .conteneur_choix_langues ul{
 	padding: 0;
@@ -93,7 +96,7 @@ body{
 .un_choix_langue{
 	display: inline-block;
     text-align: center;
-    padding: 14px 16px;
+    padding: 7px 8px;
     text-decoration: none;
     width: 36%;
     cursor: pointer;
@@ -103,16 +106,15 @@ body{
 	opacity: 0.2;
 }
 .un_choix_langue.active{
-	border-bottom: 5px solid black;
+	border-bottom: 3px solid white;
 }
 
 .haut_de_page{	
-	height: 245px;
-	margin-top: 50px;
+	height: 125px;
 }
 .contenu{
 	margin: auto;
-	max-width: 1400px;
+	max-width: 793px;
 }
 .presentations{
 	display: flex;
@@ -120,12 +122,12 @@ body{
 .bonjour{
 	font-family: 'impactreg';
     display: inline-block;
-    font-size: 88px;
-    margin-right: 50px;
-    margin-top: 10px;
+    font-size: 45px;
+    margin-right: 25px;
+    margin-top: 5px;
 }
 .presentation_texte{
-	max-width: 1080px;
+	max-width: 550px;
 	display: inline-block;
 }
 
@@ -134,22 +136,22 @@ body{
 }
 .grand_titre{
 	font-family: 'impactreg';
-	font-size: 60px;
+	font-size: 30px;
 	border-top: 3px solid black;
 	border-bottom: 3px solid black;
 	text-align: center;
-	margin-top: 15px;
+	margin-top: 8px;
 }
 .informations{
 	display: flex;
 }
 .colonne_gauche{
-	min-height: 600px;
+	min-height: 300px;
 	width: 35%;
 	border-right: 3px solid black;
 }
 .colonne_droite{
-	min-height: 600px;
+	min-height: 300px;
 	width: 64%;
 }
 .photo_contact{
@@ -159,48 +161,50 @@ body{
 	display: flex;
 }
 .les_contact .text{
-	margin-left: 20px;
-	margin-top: 4px;
+	margin-left: 10px;
+	margin-top: 2px;
 }
 .formations{
-	border-bottom: 3px solid black;
+	border-bottom: 2px solid black;
 }
 .uneforma{
-	margin-top: 10px;
+	margin-top: 5px;
 }
 .description_conteneur{
 	display: flex;
 }
 .photo_contact .photo{
 	margin: auto;
-    width: 370px;
-    height: 370px;
+    width: 170px;
+    height: 170px;
     position: relative;
-    top: -20px;
-    left: 25px;
+    top: -14px;
+    left: 33px;
     transition: 0.5s ease all;
 }
 .photo_contact .photo.hide_photo{
 	height: 0px;
 }
 .les_contact .icone{
-	width: 43px;
-	height: 43px;
+	width: 22px;
+	height: 22px;
 }
 .icone, .text{
 	display: inline-block;
 }
-.telephone .icone{
+/*.telephone .icone{
 	background-image:url(pictures/telephone.png);
+	background-size: cover;
 }
 .mail .icone{
 	background-image:url(pictures/mail.png);
-}
+	background-size: cover;
+}*/
 .git .icone, .CV .icone{
 	/*background-image:url(pictures/git-logo.png);
 	background-size: 44px 44px;*/
 	font-family: 'impactreg';
-	font-size: 35px;
+	font-size: 18px;
 	color: #A9A69C;
 }
 .international{
@@ -210,7 +214,7 @@ body{
 	display: flex;
 }
 .conteneur_une_langue .sous_titre{
-	width: 285px;
+	width: 146px;
 }
 
 .Experiences{
@@ -220,18 +224,18 @@ body{
 	display: flex;
 }
 .fleche_et_images{
-	height: 766px;
-    width: 82px;
+	height: 385px;
+    width: 41px;
 }
 }
 .liste_experiences{
 	
 }
 .une_experience{
-	margin: 25px;
+	margin: 13px;
 }
 .description_experience{
-	margin: 5px;
+	margin: 3px;
 }
 .techniques{
 	border-bottom: 3px solid black;
@@ -246,11 +250,11 @@ body{
 	display: flex;
 }
 .liste_competence div{
-	margin-top: 10px;
+	margin-top: 5px;
 }
 .conteneur_un_type_competence{
 	width: 48%;
-	margin: 15px;
+	margin: 8px;
 }
 .conteneur_un_type_competence_large{
 
@@ -259,33 +263,33 @@ body{
 	display: flex;
 }
 .liste_competence .icone{
-    height: 72px;
-    width: 15%;
+    height: 36px;
+    width: 10%;
     position: relative;
-    right: 12px;
+    right: 6px;
 }
 .liste_competence .texte{
 	width: 85%
 }
 .ampoule .icone, .calendrier .icone, .sociale .icone{
 	position: relative;
-    bottom: -13px;
+    bottom: -6px;
 }
 
 /*Skyllbar*/
 .skillbar {
 	position:relative;
 	display:block;
-	margin-bottom:15px;
+	margin-bottom:8px;
 	width:100%;
 	background:#eee;
-	height:35px;
+	height:18px;
 	border-radius:3px;
 }
 
 
 .skillbar-bar {
-	height:35px;
+	height:18px;
 	width:0px;
 	background:#6adcfa;
 	border-radius:3px;
@@ -295,11 +299,11 @@ body{
 
 .skill-bar-percent {
 	position:absolute;
-	right:10px;
+	right:5px;
 	top:0;
-	font-size:11px;
-	height:35px;
-	line-height:35px;
+	font-size:6px;
+	height:18px;
+	line-height:18px;
 	color:#444;
 	color:rgba(0, 0, 0, 0.4);
 }
@@ -321,13 +325,13 @@ body{
 .animate-leave {
     opacity: 1;
     top: 0;
-    height: 30px;
+    height: 15px;
 }
 
 .animate-leave.animate-leave-active,
 .animate-enter {
     opacity: 0;
-    top: -50px;
+    top: -25px;
     height: 0px;
 }
 
