@@ -257,7 +257,7 @@ body{
 	margin: 8px;
 }
 .conteneur_un_type_competence_large{
-
+	margin-left: 8px;
 }
 .liste_competence div{
 	display: flex;
