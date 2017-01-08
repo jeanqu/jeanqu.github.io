@@ -44,7 +44,7 @@
     "ST_COMPETENCE_2" : "Back-end et Databases",
     "TEXTE_COMPETENCE_2" : "Node.js, PHP, ASP, PostgreSQL, MySQL",
     "ST_COMPETENCE_3" : "Programmation",
-    "TEXTE_COMPETENCE_3" : "Javascript, Java, C, C++, Python ",
+    "TEXTE_COMPETENCE_3" : "Scala, Java, C, C++, Python, Javascript",
     "ST_COMPETENCE_4" : "Outils mathématiques",
     "TEXTE_COMPETENCE_4" : "R, Python (SageMath), Matlab, Scilab",
     "TITRE_TECHNIQUES" : "Techniques",
