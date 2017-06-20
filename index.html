@@ -12,9 +12,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-resource.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-animate.js"></script>
     <script src="app.js"></script>
+
     <!-- 1. Load libraries -->
     <!-- IE required polyfill -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/es6-shim/0.35.0/es6-shim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/es6-shim/0.35.0/es6-shim.min.js"></script>
     <script src="https://npmcdn.com/angular2@2.0.0-beta.14/es6/dev/src/testing/shims_for_IE.js"></script>   
      
     <script src="https://code.angularjs.org/2.0.0-beta.14/angular2-polyfills.js"></script>
@@ -22,13 +23,13 @@
     <script src="https://code.angularjs.org/2.0.0-beta.14/angular2-all.umd.dev.js"></script>
 
     <script src='app/app.component.js'></script>
-    <script src='app/main.js'></script> -->
+    <script src='app/main.js'></script>
 
   </head>
 
   <!-- 3. Display the application -->
   <body ng-app="myApp" ng-controller="MainCtrl">
-  
+ 
      <header class="header_main">
       <h1 class="titre_header">
         {{TEXT.GRAND_TITRE}}
@@ -49,17 +50,9 @@
           </ul>
         </div>
       </div>
-    </header> 
+    </header>
     <div class="contenu grand_ecran" size="A4">
       <div class="haut_de_page">
-        <!--<div class="presentations">
-          <div class="bonjour">
-             Bonjour!
-          </div>
-          <div class="presentation_texte texte">
-            Actuellement en dernier semestre d'étude d'ingénieur informatique, je cherche un stage d'ingénieur en data mining de septembre 2016 à février 2017. Passionné de technologies et de mathématiques, je souhaite m'investir énormément dans ce stage dans l'optique d'une future embauche.
-          </div>
-        </div> -->
         <div class="grand_titre">
           <div class="ligne1"> 
             <span class="nom_prenom">{{TEXT.NOM_PRENOM}}</span> <br> {{TEXT.TITRE_LIGNE_2}}
@@ -203,7 +196,7 @@
                   {{TEXT.ENGLISH}}
                 </div>
                 <div class="skillbar clearfix " data-percent="65%">
-                    <div class="skillbar-bar" style="background: #88cd2a; width: 90%"></div>
+                    <div class="skillbar-bar" style="background: #F7A53B; width: 90%"></div>
                 </div>
               </div>
 
@@ -221,7 +214,7 @@
                   {{TEXT.POLISH}}
                 </div>
                 <div class="skillbar clearfix " data-percent="65%">
-                    <div class="skillbar-bar" style="background: #6ADCFA; width: 65%"></div>
+                    <div class="skillbar-bar" style="background: #E7B852; width: 65%"></div>
                 </div>
               </div>
             </div>
@@ -261,9 +254,8 @@
                     {{TEXT.TEXTE_EXPERIENCE_1_1}}
                     <br>
                     {{TEXT.TEXTE_EXPERIENCE_1_2}}
-                  </div>
-                  <div class="description_experience texte">
-                    {{TEXT.TEXTE_EXPERIENCE_2}}
+                    <br>
+                    {{TEXT.TEXTE_EXPERIENCE_1_3}}
                   </div>
                 </div>
                 <div class="une_experience">
@@ -277,8 +269,9 @@
                     {{TEXT.TEXTE_EXPERIENCE_2_1}}
                     <br>
                     {{TEXT.TEXTE_EXPERIENCE_2_2}}
-                    <br>
-                    {{TEXT.TEXTE_EXPERIENCE_2_3}}
+                  </div>
+                  <div class="description_experience texte">
+                    {{TEXT.TEXTE_EXPERIENCE_3}}
                   </div>
                 </div>
                 <div class="une_experience">
@@ -289,7 +282,11 @@
                     {{TEXT.DATE_EXPERIENCE_3}}
                   </div>
                   <div class="description_experience texte">
-                    {{TEXT.TEXTE_EXPERIENCE_3}}
+                    {{TEXT.TEXTE_EXPERIENCE_3_1}}
+                    <br>
+                    {{TEXT.TEXTE_EXPERIENCE_3_2}}
+                    <br>
+                    {{TEXT.TEXTE_EXPERIENCE_3_3}}
                   </div>
                 </div>
               </div>
